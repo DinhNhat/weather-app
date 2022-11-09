@@ -18,7 +18,7 @@ function App() {
     e.preventDefault();
 
     // Get Coordinates by location name
-    const urlCoordinates = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=2&appid=${API_KEY}`;
+    const urlCoordinates = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=2&appid=${API_KEY}`;
     axios({
       method: 'GET',
       url: urlCoordinates
